@@ -6,6 +6,10 @@ h4.logo {
   float: left;
 }
 
+h4.logo {
+  color: #fff;
+}
+
 .right {
   float: right;
 }
@@ -115,4 +119,10 @@ h4.logo {
   -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);
   transition: all .6s cubic-bezier(.19, 1, .22, 1);
   opacity: 0;
+}
+
+.container-fluid.topNavbar.ng-scope {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
 }
