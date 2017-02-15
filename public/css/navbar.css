@@ -1,0 +1,55 @@
+h4.logo {
+  margin: 0;
+  padding: 40px 0 0 60px;
+  font-size: 20px;
+  letter-spacing: 4px;
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.bt-menu {
+  position: relative;
+  padding: 40px 40px 0;
+  height: 100px;
+  width: 104px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.bt-menu .container-lines {
+  width: 24px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.bt-menu .line:first-child {
+  margin-top: 0;
+}
+
+.bt-menu .line {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  margin-top: 7px;
+}
+
+.bt-menu span {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #b2b2b2;
+  height: 2px;
+  width: 24px;
+}
+
+.bt-menu .line.line-2 .l1 {
+  width: 7px;
+}
+
+.bt-menu .line.line-2 .l2 {
+  width: 14px;
+  margin-left: 3px;
+}

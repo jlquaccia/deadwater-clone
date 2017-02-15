@@ -6,6 +6,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/home.css"> <!-- custom styles -->
+  <link rel="stylesheet" href="css/navbar.css">
   <!-- JS -->
   <script src="libs/angular/angular.js"></script>
   <script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -19,24 +20,7 @@
   <script src="js/routes/routes.js"></script>
 </head>
 <body>
-  <!-- HEADER -->
-  <nav class="navbar navbar-inverse">
-    <div class="navbar-header">
-      <a ui-sref="home" class="navbar-brand">Deadwater</a>
-    </div>
-    <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
-    <ul class="nav navbar-nav">
-      <li>
-        <a ui-sref="achievements">Achievements</a>
-      </li>
-      <li>
-        <a ui-sref="studio">Studio</a>
-      </li>
-      <li>
-        <a ui-sref="contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
+  <div ng-include="'partials/navbar.html'"></div>
   
   <!-- ANGULAR DYNAMIC CONTENT -->
   <div ui-view></div>
