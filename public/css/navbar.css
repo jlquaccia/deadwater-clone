@@ -53,3 +53,47 @@ h4.logo {
   width: 14px;
   margin-left: 3px;
 }
+
+.navbarMenuWrapper {
+  position: absolute;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #F8BD01;
+  // display: none;
+}
+
+.navbarMenuWrapper .logo {
+  padding-bottom: 40px;
+  color: #fece2f;
+  cursor: pointer;
+}
+
+.navLinks {
+  padding: 40px;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.navLinks a {
+  color: #FAFAFA;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navLinks li {
+  display: inline-flex;
+  margin-right: 120px;
+}
+
+.navLinks li .line {
+  background-color: #ffdc69;
+  -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);
+  transition: all .6s cubic-bezier(.19, 1, .22, 1);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  width: 20px;
+  height: 1px;
+}
