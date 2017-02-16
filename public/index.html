@@ -6,8 +6,11 @@
   <!-- CSS -->
   <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/home.css"> <!-- custom styles -->
   <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
   <!-- JS -->
   <script src="libs/angular/angular.js"></script>
   <script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -27,5 +30,7 @@
   
   <!-- ANGULAR DYNAMIC CONTENT -->
   <div ui-view></div>
+
+  <div ng-include="'partials/footer.html'"></div>
 </body>
 </html>
