@@ -8,9 +8,51 @@ ul.footerLinks li {
   display: inline-block;
 }
 
+ul.footerLinks > li:first-child {
+  margin-left: 0;
+}
+
+ul.footerLinks > li {
+  margin-left: 75px;
+}
+
 ul.footerLinks li a {
   font-size: 20px;
   color: #B2B2B2;
+  text-decoration: none;
+}
+
+ul.footerLinks li a .line {
+  background-color: #b2b2b2;
+  -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);
+  transition: all .6s cubic-bezier(.19, 1, .22, 1);
+}
+
+.footerLinks span.line {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  width: 20px;
+  height: 1px;
+  background-color: #e7e6e0;
+  overflow: hidden;
+}
+
+ul.footerLinks li a .text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #b2b2b2;
+}
+
+span.line + span.text {
+  position: relative;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Playfair Display',serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #b2b2b2;
 }
 
 .footerWrapper {
