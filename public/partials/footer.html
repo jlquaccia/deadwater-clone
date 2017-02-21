@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" ng-controller="FooterCtrl">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -7,25 +7,25 @@
             <li>
               <a href="#">
                 <span class="line white"></span>
-                <span class="text">home</span>
+                <span class="text">home</span><span class="ion-ios-arrow-right"></span>
               </a>
             </li>
             <li>
               <a href="#">
                 <span class="line white"></span>
-                <span class="text">achievements</span>
+                <span class="text">achievements</span><span class="ion-ios-arrow-right"></span>
               </a>
             </li>
             <li>
               <a href="#">
                 <span class="line white"></span>
-                <span class="text">studio</span>
+                <span class="text">studio</span><span class="ion-ios-arrow-right"></span>
               </a>
             </li>
             <li>
               <a href="#">
                 <span class="line white"></span>
-                <span class="text">contact</span>
+                <span class="text">contact</span><span class="ion-ios-arrow-right"></span>
               </a>
             </li>
             <div class="right">
@@ -39,7 +39,7 @@
             <div style="clear: both:"></div>
           </ul>
           <div class="copyright">2017 - ALL RIGHTS RESERVED</div>
-          <div class="footerTitle">DEADWATER.FR</div>
+          <a ui-sref="home" class="footerTitle">DEADWATER.FR</a>
           <div style="clear: both:"></div>
         </div>
       </div>
