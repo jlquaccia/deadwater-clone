@@ -1,11 +1,11 @@
-// modules ===============================================================================================================================
+// modules ========================================================================================================================
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 
-// configuration =========================================================================================================================
+// configuration ==================================================================================================================
 // config files
 var db = require('./config/db');
 
@@ -14,7 +14,7 @@ var port = process.env.PORT || 3000;
 
 // connect to our mongoDB database 
 // (uncomment after you enter in your own credentials in config/db.js)
-mongoose.connect(db.url);
+mongoose.connect(process.env.MONGOLAB_URI || db.url);
 
 // get all data/stuff of the body (POST) parameters
 // parse application/json
@@ -28,10 +28,10 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 // set the static files location, ex. /public/img will be /img for users
 app.use(express.static(__dirname + '/public'));
 
-// routes ================================================================================================================================
+// routes =========================================================================================================================
 require('./app/routes')(app); // configure our routes
 
-// start app =============================================================================================================================
+// start app ======================================================================================================================
 app.listen(port);
 console.log('serving up the cloned deadwater backend on port ' + port);
 // expose app
