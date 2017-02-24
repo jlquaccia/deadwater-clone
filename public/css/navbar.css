@@ -68,6 +68,7 @@ h4.logo {
   height: 0;
   -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);
   transition: all .6s cubic-bezier(.19, 1, .22, 1);
+  top: 0;
 }
 
 .navbarMenuWrapper .logo {

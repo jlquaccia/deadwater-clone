@@ -11,9 +11,11 @@ angular.module('deadwater').controller('NavbarCtrl', [ function () {
     });
   // end nav link hovers---------------------------------------------------------------------------------------------------------------
   // hamburger hover-------------------------------------------------------------------------------------------------------------------
+    var width = $(window).width();
+
     $('.container-lines').mouseenter(function () {
       $('.navbarMenuWrapper').css({
-        'height': '108px',
+        'height': width >= 1050 ? '108px' : '158px',
         'opacity': '1'
       });
 
