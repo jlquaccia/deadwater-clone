@@ -23,16 +23,16 @@
     </div>
     <!-- HIDDEN NAV MENU -->
       <div class="navbarMenuWrapper">
-        <h4 class="logo" ui-sref="home">DEADWATER</h4>
+        <h4 class="logo" ui-sref="home" ng-click="toggleHamburger();">DEADWATER</h4>
         <div class="clearLogo"></div>
         <ul class="navLinks">
-          <li>
+          <li ng-click="toggleHamburger();">
             <em><span class="line"></span><a ui-sref="achievements">achievements</a><span class="ion-ios-arrow-right"></span></em>
           </li>
-          <li>
+          <li ng-click="toggleHamburger();">
             <em><span class="line"></span><a ui-sref="studio">studio</a><span class="ion-ios-arrow-right"></span></em>
           </li>
-          <li>
+          <li ng-click="toggleHamburger();">
             <em><span class="line"></span><a ui-sref="contact">contact</a><span class="ion-ios-arrow-right"></span></em>
           </li>
         </ul>

@@ -136,3 +136,7 @@ footer.footer {
 .footerTitle:focus {
   text-decoration: none;
 }
+
+ul.footerLinks .verticalLine {
+  display: none;
+}

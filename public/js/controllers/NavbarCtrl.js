@@ -1,20 +1,21 @@
 angular.module('deadwater').controller('NavbarCtrl', ['$rootScope', function ($rootScope) {
   $rootScope.hamburgerOpen = false;
+  var width = $(window).width();
 
   // nav link hovers-------------------------------------------------------------------------------------------------------------------
-    $('.navLinks a').mouseenter(function () {
-      $(this).prev().css('width', '5px');
-      $(this).next().css('opacity', '1');
-    });
+    if (width >= 900) {
+      $('.navLinks a').mouseenter(function () {
+        $(this).prev().css('width', '5px');
+        $(this).next().css('opacity', '1');
+      });
 
-    $('.navLinks a').mouseleave(function () {
-      $(this).prev().css('width', '20px');
-      $(this).next().css('opacity', '0');
-    });
+      $('.navLinks a').mouseleave(function () {
+        $(this).prev().css('width', '20px');
+        $(this).next().css('opacity', '0');
+      });
+    }
   // end nav link hovers---------------------------------------------------------------------------------------------------------------
   // hamburger hover-------------------------------------------------------------------------------------------------------------------
-    var width = $(window).width();
-
     if (width >= 900) {
       $('.container-lines').mouseenter(function () {
         $('.navbarMenuWrapper').css({
