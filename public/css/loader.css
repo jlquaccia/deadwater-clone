@@ -1,0 +1,286 @@
+/* ----------------------------------------------- */
+/* background lines */
+/* ----------------------------------------------- */
+#background-lines {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 2760px;
+    margin-left: -1380px;
+    height: 100%;
+    z-index: 0;
+}
+
+#background-lines .line-1 {
+    left: 0;
+}
+
+#background-lines .line {
+    position: absolute;
+    width: 1px;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #e7e6e0;
+}
+
+#background-lines .line-2 {
+    left: 460px;
+}
+
+#background-lines .line-3 {
+    left: 920px;
+}
+
+#background-lines .line-4 {
+    left: 1380px;
+}
+
+#background-lines .line-5 {
+    left: 1840px;
+}
+
+#background-lines .line-6 {
+    left: 2300px;
+}
+
+#background-lines .line-7 {
+    left: 2760px;
+}
+
+/* ----------------------------------------------- */
+/* background panels */
+/* ----------------------------------------------- */
+#background-panels, #background-panels-over {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 2760px;
+    margin-left: -1380px;
+    height: 100%;
+    z-index: 110;
+}
+
+#background-panels, #background-panels-over {
+    filter: alpha(Opacity=0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+#background-panels .line-1, #background-panels-over .line-1 {
+    left: 0;
+}
+
+#background-panels .line, #background-panels-over .line {
+    position: absolute;
+    width: 460px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fafafa;
+    border-left: 1px solid #e7e6e0;
+    overflow: hidden;
+}
+
+#background-panels .line-2, #background-panels-over .line-2 {
+    left: 460px;
+}
+
+#background-panels .line-3, #background-panels-over .line-3 {
+    left: 920px;
+}
+
+#background-panels .line-4, #background-panels-over .line-4 {
+    left: 1380px;
+}
+
+#background-panels .line-5, #background-panels-over .line-5 {
+    left: 1840px;
+}
+
+#background-panels .line-6, #background-panels-over .line-6 {
+    left: 2300px;
+}
+
+#background-panels .line-7, #background-panels-over .line-7 {
+    left: 2760px;
+}
+
+/* ----------------------------------------------- */
+/* background panels over */
+/* ----------------------------------------------- */
+#background-panels-over {
+    z-index: 130;
+}
+
+/* ----------------------------------------------- */
+/* logo */
+/* ----------------------------------------------- */
+#logo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 120;
+    -webkit-transform: translateZ(0);
+    z-index: 9999;
+    transition: 1s 0.4s;
+}
+
+#logo #scene {
+    position: absolute;
+    width: 756px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+#logo #scene, #logo .left {
+    height: 92px;
+    overflow: hidden;
+}
+
+#logo .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 339px;
+    z-index: 2;
+}
+
+#logo #scene, #logo .left {
+    height: 92px;
+    overflow: hidden;
+}
+
+#logo .left .inner-left {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -330px;
+    top: 0;
+}
+
+#logo .logo-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#logo .logo-item svg {
+    display: block;
+    position: relative;
+}
+
+#logo .logo-item svg .letter {
+    fill: #e7e6e0;
+}
+
+#logo .logo-item.l2 {
+    left: 90px;
+}
+
+#logo .logo-item.l3 {
+    left: 160px;
+}
+
+#logo .logo-item.l4 {
+    left: 255px;
+}
+
+#logo .right {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    overflow: hidden;
+    height: 92px;
+    width: 426px;
+    z-index: 1;
+}
+
+#logo .right .inner-right {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -426px;
+    top: 0;
+}
+
+#logo .logo-item.l5 {
+    left: 0;
+}
+
+#logo .logo-item.l6 {
+    left: 123px;
+}
+
+#logo .logo-item.l7 {
+    left: 196px;
+}
+
+#logo .logo-item.l8 {
+    left: 284px;
+}
+
+#logo .logo-item.l9 {
+    left: 363px;
+}
+
+/* ----------------------------------------------- */
+/* progress */
+/* ----------------------------------------------- */
+#progress {
+    position: fixed;
+    height: 6px;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    background-color: #fff;
+    z-index: 20000;
+    overflow: hidden;
+}
+
+#progress .line {
+    position: absolute;
+    background-color: #f8bd01;
+    height: 10px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+/* ----------------------------------------------- */
+/* other */
+/* ----------------------------------------------- */
+#overlay.open {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 1s 0.4s;
+}
+
+#progress {
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  width: 0;
+  top: 50%;
+}
+
+#progstat {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
