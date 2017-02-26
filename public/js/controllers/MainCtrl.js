@@ -1,13 +1,15 @@
-angular.module('deadwater').controller('MainCtrl', ['$window', function ($window) {
+angular.module('deadwater').controller('MainCtrl', ['$window', '$rootScope', function ($window, $rootScope) {
   $window.onload = function() {
     setTimeout(function () {
-      $('#overlay.open').css('background', 'transparent');
-      $('#logo').css('opacity', '0');
-
-      setTimeout(function () {
-        $('#overlay').removeClass('open');
-        $('#logo').css('display', 'none');
-      }, 1500);
+      $('.overlay-hugeinc.open').removeClass('open');
     }, 2000);
   };
+
+  $rootScope.$on('$stateChangeStart', function (e, toState, toParams, fromState, fromParams) {
+    $('.overlay-hugeinc').addClass('open');
+
+    setTimeout(function () {
+      $('.overlay-hugeinc.open').removeClass('open');
+    }, 2000);
+  });
 }]);
