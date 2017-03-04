@@ -63,13 +63,6 @@ span.line + span.text {
   padding: 40px 40px 100px;
 }
 
-footer.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 .copyright {
   float: left;
 }
