@@ -85,7 +85,7 @@
 .projectWrapper .textWrapper {
   background-color: #F8BD2C;
   color: #fff;
-  padding: 4em 15em 4em 4em;
+  padding: 5% 20% 5% 5%;
   display: inline-block;
   opacity: .9;
   -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);

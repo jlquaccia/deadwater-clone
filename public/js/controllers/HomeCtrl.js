@@ -1,4 +1,6 @@
 angular.module('deadwater').controller('HomeCtrl', ['$scope', function ($scope) {
+  var viewportWidth = $(window).width();
+
   $scope.discoverWrapperHoverOver = function () {
     $('.ion-ios-arrow-right.before').css({
       'opacity': '1',
@@ -43,11 +45,37 @@ angular.module('deadwater').controller('HomeCtrl', ['$scope', function ($scope) 
   });
 
   // three
-  $('.projectWrapper .imgWrapper.one').waypoint(function () {
-    $('.projectWrapper .imgWrapper.one').css('width', '680px');
-  }, {
-    offset: '75%'
-  });
+  // $(window).resize(function () {
+  //   if (viewportWidth >= '992px') {
+  //     $('.projectWrapper .imgWrapper.one').waypoint(function () {
+  //       $('.projectWrapper .imgWrapper.one').css('width', '680px');
+  //     }, {
+  //       offset: '75%'
+  //     });
+  //   } else {
+  //     $('.projectWrapper .imgWrapper.one').waypoint(function () {
+  //       $('.projectWrapper .imgWrapper.one').css('width', '100%');
+  //     }, {
+  //       offset: '75%'
+  //     });
+  //   }
+  // });
+
+  if (viewportWidth >= 992) {
+    $('.projectWrapper .imgWrapper.one').waypoint(function () {
+      $('.projectWrapper .imgWrapper.one').css('width', '680px');
+      console.log('bigger than 992px');
+    }, {
+      offset: '75%'
+    });
+  } else {
+    $('.projectWrapper .imgWrapper.one').waypoint(function () {
+      $('.projectWrapper .imgWrapper.one').css('width', '100%');
+      console.log('less than 992px');
+    }, {
+      offset: '75%'
+    });
+  }
 
   // four
   $('.projectWrapper .inner.one').waypoint(function () {
@@ -57,11 +85,19 @@ angular.module('deadwater').controller('HomeCtrl', ['$scope', function ($scope) 
   });
 
   // five
-  $('.projectWrapper .imgWrapper.two').waypoint(function () {
-    $('.projectWrapper .imgWrapper.two').css('width', '680px');
-  }, {
-    offset: '75%'
-  });
+  if (viewportWidth >= 992) {
+    $('.projectWrapper .imgWrapper.two').waypoint(function () {
+      $('.projectWrapper .imgWrapper.two').css('width', '680px');
+    }, {
+      offset: '75%'
+    });
+  } else {
+    $('.projectWrapper .imgWrapper.two').waypoint(function () {
+      $('.projectWrapper .imgWrapper.two').css('width', '100%');
+    }, {
+      offset: '75%'
+    });
+  }
 
   // six
   $('.projectWrapper .inner.two').waypoint(function () {
@@ -71,11 +107,19 @@ angular.module('deadwater').controller('HomeCtrl', ['$scope', function ($scope) 
   });
 
   // seven
-  $('.projectWrapper .imgWrapper.three').waypoint(function () {
-    $('.projectWrapper .imgWrapper.three').css('width', '680px');
-  }, {
-    offset: '75%'
-  });
+  if (viewportWidth >= 992) {
+    $('.projectWrapper .imgWrapper.three').waypoint(function () {
+      $('.projectWrapper .imgWrapper.three').css('width', '680px');
+    }, {
+      offset: '75%'
+    });
+  } else {
+    $('.projectWrapper .imgWrapper.three').waypoint(function () {
+      $('.projectWrapper .imgWrapper.three').css('width', '100%');
+    }, {
+      offset: '75%'
+    });
+  }
 
   // eight
   $('.projectWrapper .inner.three').waypoint(function () {

@@ -23,6 +23,18 @@
   ul.footerLinks > li {
     margin-left: 0;
   }
+
+  .projectWrapper > .imgWrapper {
+    display: block;
+  }
+
+  .inner {
+    right: -5em;
+  }
+
+  .inner.left {
+    left: -5em;
+  }
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -79,6 +91,18 @@
 
   .navLinks li {
     margin-right: 10px;
+  }
+
+  .projectWrapper .textWrapper h3 {
+    font-size: 2em;
+  }
+
+  .inner {
+    right: -3em;
+  }
+
+  .inner.left {
+    left: -3em;
   }
 }
 
