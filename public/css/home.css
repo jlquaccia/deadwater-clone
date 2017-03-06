@@ -1,17 +1,29 @@
+.homeImgOneWrapper {
+  width: 0%;
+  overflow: hidden;
+}
+
 .homeImgOne {
   margin: 0 auto;
+  width: 1410px;
 }
 
 .textWrapperOne {
   position: absolute;
   z-index: 99;
   top: 17em;
+  white-space: nowrap;
 }
 
 .textWrapperOne span em,
 .textWrapperTwo span em {
   color: #B2B2B2;
   font-size: 28px;
+  vertical-align: bottom;
+}
+
+.textWrapperOne span em {
+  display: inline-block;
 }
 
 .textWrapperOne h1,
@@ -28,6 +40,7 @@
 .textWrapperTwo {
   display: inline-block;
   text-align: left;
+  white-space: nowrap;
 }
 
 .textTwoOuter {
@@ -105,11 +118,23 @@
 
 .discoverWrapper h3 > span,
 .discoverWrapper h3,
-.ion-ios-arrow-right.before {
+.ion-ios-arrow-right.before,
+.homeImgOne,
+.homeImgOneWrapper {
   -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1) .3s;
   -o-transition: all .6s cubic-bezier(.19, 1, .22, 1) .3s;
   -moz-transition: all .6s cubic-bezier(.19, 1, .22, 1) .3s;
   transition: all .6s cubic-bezier(.19, 1, .22, 1) .3s;
+}
+
+.textWrapperOne .container-line,
+.textWrapperOne > span em,
+.textWrapperTwo .container-line,
+.textWrapperTwo > span em {
+  -webkit-transition: all .9s cubic-bezier(.19, 1, .22, 1) .6s;
+  -o-transition: all .9s cubic-bezier(.19, 1, .22, 1) .6s;
+  -moz-transition: all .9s cubic-bezier(.19, 1, .22, 1) .6s;
+  transition: all .9s cubic-bezier(.19, 1, .22, 1) .6s;
 }
 
 .ion-ios-arrow-right.before {
@@ -241,4 +266,35 @@
 
 .left {
   float: left;
+}
+
+.textWrapperOne h1 span.one,
+.textWrapperTwo h1 span.one {
+  display: inline-block;
+  -webkit-transition: all .9s cubic-bezier(.19, 1, .22, 1) 1.2s;
+  -o-transition: all .9s cubic-bezier(.19, 1, .22, 1) 1.2s;
+  -moz-transition: all .9s cubic-bezier(.19, 1, .22, 1) 1.2s;
+  transition: all .9s cubic-bezier(.19, 1, .22, 1) 1.2s;
+}
+
+.textWrapperOne h1 span.two,
+.textWrapperTwo h1 span.two {
+  display: inline-block;
+  -webkit-transition: all .9s cubic-bezier(.19, 1, .22, 1) 1.5s;
+  -o-transition: all .9s cubic-bezier(.19, 1, .22, 1) 1.5s;
+  -moz-transition: all .9s cubic-bezier(.19, 1, .22, 1) 1.5s;
+  transition: all .9s cubic-bezier(.19, 1, .22, 1) 1.5s;
+}
+
+.textWrapperOne .container-line,
+.textWrapperOne > span em,
+.textWrapperOne h1 span.one,
+.textWrapperOne h1 span.two,
+.textWrapperTwo .container-line,
+.textWrapperTwo > span em,
+.textWrapperTwo h1 span.one,
+.textWrapperTwo h1 span.two {
+  width: 0%;
+  overflow: hidden;
+  opacity: 0;
 }
