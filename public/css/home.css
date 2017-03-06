@@ -92,6 +92,7 @@
   -o-transition: all .6s cubic-bezier(.19, 1, .22, 1);
   -moz-transition: all .6s cubic-bezier(.19, 1, .22, 1);
   transition: all .6s cubic-bezier(.19, 1, .22, 1);
+  white-space: nowrap;
 }
 
 .projectWrapper .textWrapper h3 {
@@ -166,18 +167,33 @@
   left: -10px;
 }
 
-.discoverWrapper h3:hover {
-  background-color: #F8BD2C;
-}
+@media all and (min-width: 900px) {
+  .discoverWrapper h3:hover {
+    background-color: #F8BD2C;
+  }
 
-.discoverWrapper h3:hover > span {
-  left: 20px;
-  color: #fff;
-}
+  .discoverWrapper h3:hover > span {
+    left: 20px;
+    color: #fff;
+  }
 
-.discoverWrapper h3:hover ~ .ion-ios-arrow-right.after {
-  left: 0;
-  opacity: 0;
+  .discoverWrapper h3:hover ~ .ion-ios-arrow-right.after {
+    left: 0;
+    opacity: 0;
+  }
+
+  .social .textWrapper h3 a:hover:after {
+    width: 100%;
+  }
+
+  .projectWrapper:hover > .imgWrapper img,
+  .projectWrapper:hover > .textWrapper {
+    opacity: 1;
+  }
+
+  .projectWrapper:hover > .imgWrapper img {
+    transform: scale(1.1);
+  }
 }
 
 .ion-ios-arrow-right.after {
@@ -238,10 +254,6 @@
   transition: all .6s cubic-bezier(1, 0, 0, 1);
 }
 
-.social .textWrapper h3 a:hover:after {
-  width: 100%;
-}
-
 .social .line {
   background-color: #ffdc69;
   width: 20px;
@@ -271,15 +283,6 @@
   filter: alpha(Opacity=20);
   opacity: .2;
   visibility: visible;
-}
-
-.projectWrapper:hover > .imgWrapper img,
-.projectWrapper:hover > .textWrapper {
-  opacity: 1;
-}
-
-.projectWrapper:hover > .imgWrapper img {
-  transform: scale(1.1);
 }
 
 .left {

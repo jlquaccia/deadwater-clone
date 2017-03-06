@@ -45,33 +45,10 @@ angular.module('deadwater').controller('HomeCtrl', ['$scope', function ($scope) 
   });
 
   // three
-  // $(window).resize(function () {
-  //   if (viewportWidth >= '992px') {
-  //     $('.projectWrapper .imgWrapper.one').waypoint(function () {
-  //       $('.projectWrapper .imgWrapper.one').css('width', '680px');
-  //     }, {
-  //       offset: '75%'
-  //     });
-  //   } else {
-  //     $('.projectWrapper .imgWrapper.one').waypoint(function () {
-  //       $('.projectWrapper .imgWrapper.one').css('width', '100%');
-  //     }, {
-  //       offset: '75%'
-  //     });
-  //   }
-  // });
-
   if (viewportWidth >= 992) {
     $('.projectWrapper .imgWrapper.one').waypoint(function () {
       $('.projectWrapper .imgWrapper.one').css('width', '680px');
       console.log('bigger than 992px');
-    }, {
-      offset: '75%'
-    });
-  } else {
-    $('.projectWrapper .imgWrapper.one').waypoint(function () {
-      $('.projectWrapper .imgWrapper.one').css('width', '100%');
-      console.log('less than 992px');
     }, {
       offset: '75%'
     });
@@ -91,12 +68,6 @@ angular.module('deadwater').controller('HomeCtrl', ['$scope', function ($scope) 
     }, {
       offset: '75%'
     });
-  } else {
-    $('.projectWrapper .imgWrapper.two').waypoint(function () {
-      $('.projectWrapper .imgWrapper.two').css('width', '100%');
-    }, {
-      offset: '75%'
-    });
   }
 
   // six
@@ -110,12 +81,6 @@ angular.module('deadwater').controller('HomeCtrl', ['$scope', function ($scope) 
   if (viewportWidth >= 992) {
     $('.projectWrapper .imgWrapper.three').waypoint(function () {
       $('.projectWrapper .imgWrapper.three').css('width', '680px');
-    }, {
-      offset: '75%'
-    });
-  } else {
-    $('.projectWrapper .imgWrapper.three').waypoint(function () {
-      $('.projectWrapper .imgWrapper.three').css('width', '100%');
     }, {
       offset: '75%'
     });
@@ -151,9 +116,11 @@ angular.module('deadwater').controller('HomeCtrl', ['$scope', function ($scope) 
   });
 
   // eleven
-  $('.social').waypoint(function () {
-    $('.social').css('width', '100%');
-  }, {
-    offset: '75%'
-  });
+  if (viewportWidth >= 992) {
+    $('.social').waypoint(function () {
+      $('.social').css('width', '100%');
+    }, {
+      offset: '75%'
+    });
+  }
 }]);
