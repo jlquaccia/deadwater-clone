@@ -39,4 +39,40 @@ angular.module('deadwater').controller('HomeCtrl', ['$scope', function ($scope) 
   }, {
     offset: '75%'
   });
+
+  $('.projectWrapper .imgWrapper.one').waypoint(function () {
+    $('.projectWrapper .imgWrapper.one').css('width', '680px');
+  }, {
+    offset: '75%'
+  });
+
+  $('.projectWrapper .inner.one').waypoint(function () {
+    $('.projectWrapper .inner.one').css('width', '100%');
+  }, {
+    offset: '75%'
+  });
+
+  $('.projectWrapper .imgWrapper.two').waypoint(function () {
+    $('.projectWrapper .imgWrapper.two').css('width', '680px');
+  }, {
+    offset: '75%'
+  });
+
+  $('.projectWrapper .inner.two').waypoint(function () {
+    $('.projectWrapper .inner.two').css('width', '100%');
+  }, {
+    offset: '75%'
+  });
+
+  $('.projectWrapper .imgWrapper.three').waypoint(function () {
+    $('.projectWrapper .imgWrapper.three').css('width', '680px');
+  }, {
+    offset: '75%'
+  });
+
+  $('.projectWrapper .inner.three').waypoint(function () {
+    $('.projectWrapper .inner.three').css('width', '100%');
+  }, {
+    offset: '75%'
+  });
 }]);

@@ -1,4 +1,10 @@
-.homeImgOneWrapper {
+.homeImgOneWrapper,
+.projectWrapper .imgWrapper.one,
+.projectWrapper .inner.one,
+.projectWrapper .imgWrapper.two,
+.projectWrapper .inner.two,
+.projectWrapper .imgWrapper.three,
+.projectWrapper .inner.three {
   width: 0%;
   overflow: hidden;
 }
@@ -78,8 +84,6 @@
   background-color: #F8BD2C;
   color: #fff;
   padding: 4em 15em 4em 4em;
-  position: relative;
-  top: -13em;
   display: inline-block;
   opacity: .9;
   -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);
@@ -99,8 +103,9 @@
 
 .projectWrapper {
   width: 80%;
-  margin: 0 auto;
+  margin: 3em auto;
   display: inline-block;
+  position: relative;
 }
 
 .discoverWrapper {
@@ -120,7 +125,10 @@
 .discoverWrapper h3,
 .ion-ios-arrow-right.before,
 .homeImgOne,
-.homeImgOneWrapper {
+.homeImgOneWrapper,
+.projectWrapper .imgWrapper.one,
+.projectWrapper .imgWrapper.two,
+.projectWrapper .imgWrapper.three {
   -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1) .3s;
   -o-transition: all .6s cubic-bezier(.19, 1, .22, 1) .3s;
   -moz-transition: all .6s cubic-bezier(.19, 1, .22, 1) .3s;
@@ -130,7 +138,10 @@
 .textWrapperOne .container-line,
 .textWrapperOne > span em,
 .textWrapperTwo .container-line,
-.textWrapperTwo > span em {
+.textWrapperTwo > span em,
+.projectWrapper .inner.one,
+.projectWrapper .inner.two,
+.projectWrapper .inner.three {
   -webkit-transition: all .9s cubic-bezier(.19, 1, .22, 1) .6s;
   -o-transition: all .9s cubic-bezier(.19, 1, .22, 1) .6s;
   -moz-transition: all .9s cubic-bezier(.19, 1, .22, 1) .6s;
@@ -297,4 +308,18 @@
   width: 0%;
   overflow: hidden;
   opacity: 0;
+}
+
+.inner {
+  position: absolute;
+  bottom: -3em;
+  right: 0;
+}
+
+.inner.left {
+  left: 0;
+}
+
+.inner.two {
+  white-space: nowrap;
 }
