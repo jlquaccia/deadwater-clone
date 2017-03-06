@@ -309,7 +309,11 @@
 .textWrapperTwo .container-line,
 .textWrapperTwo > span em,
 .textWrapperTwo h1 span.one,
-.textWrapperTwo h1 span.two {
+.textWrapperTwo h1 span.two,
+.textWrapperTwo.three .container-line,
+.textWrapperTwo.three > span em,
+.textWrapperTwo.three h1 span.one,
+.textWrapperTwo.three h1 span.two {
   width: 0%;
   overflow: hidden;
   opacity: 0;
