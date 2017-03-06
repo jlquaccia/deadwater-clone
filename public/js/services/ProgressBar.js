@@ -3,7 +3,7 @@ angular.module('deadwater').factory('ProgressBar', [function () {
     progressBar: progressBar
   };
 
-  function progressBar () {
+  function progressBar (cb) {
     var progress = document.querySelector('.js-progress');
     var currentValue = progress.value;
     var emulateProgress = setInterval(function () {
@@ -14,6 +14,7 @@ angular.module('deadwater').factory('ProgressBar', [function () {
         clearInterval(emulateProgress);
         $('.overlay-hugeinc.open').removeClass('open');
         currentValue = 0;
+        cb();
       }
       
       progress.value = currentValue;

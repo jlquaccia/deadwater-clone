@@ -117,6 +117,47 @@
   .container-fluid.noPads.ng-scope {
     padding: 0;
   }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  #logo .logo-item.l1 {
+    left: 60%;
+  }
+
+  #logo .logo-item.l2 {
+    left: 70% !important;
+  }
+
+  #logo .logo-item.l3 {
+    left: 80% !important;
+  }
+
+  #logo .logo-item.l4 {
+    left: 90% !important;
+  }
+
+  #logo .logo-item.l5 {
+    left: 5% !important;
+  }
+
+  #logo .logo-item.l6 {
+    left: 15% !important;
+  }
+
+  #logo .logo-item.l7 {
+    left: 25% !important;
+  }
+
+  #logo .logo-item.l8 {
+    left: 35% !important;
+  }
+
+  #logo .logo-item.l9 {
+    left: 45% !important;
+  }
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -210,5 +251,9 @@
 
   .social .discoverWrapper {
     top: 8em;
+  }
+
+  ul.footerLinks .verticalLine {
+    padding-right: 0;
   }
 }
