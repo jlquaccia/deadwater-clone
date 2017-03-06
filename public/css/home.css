@@ -4,7 +4,8 @@
 .projectWrapper .imgWrapper.two,
 .projectWrapper .inner.two,
 .projectWrapper .imgWrapper.three,
-.projectWrapper .inner.three {
+.projectWrapper .inner.three,
+.discoverWrapper {
   width: 0%;
   overflow: hidden;
 }
@@ -110,6 +111,9 @@
 
 .discoverWrapper {
   text-align: center;
+  display: inline-block;
+  margin: 3em 0;
+  white-space: nowrap;
 }
 
 .discoverWrapper h3 {
@@ -128,7 +132,8 @@
 .homeImgOneWrapper,
 .projectWrapper .imgWrapper.one,
 .projectWrapper .imgWrapper.two,
-.projectWrapper .imgWrapper.three {
+.projectWrapper .imgWrapper.three,
+.discoverWrapper {
   -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1) .3s;
   -o-transition: all .6s cubic-bezier(.19, 1, .22, 1) .3s;
   -moz-transition: all .6s cubic-bezier(.19, 1, .22, 1) .3s;

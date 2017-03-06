@@ -75,4 +75,10 @@ angular.module('deadwater').controller('HomeCtrl', ['$scope', function ($scope) 
   }, {
     offset: '75%'
   });
+
+  $('.discoverWrapper').waypoint(function () {
+    $('.discoverWrapper').css('width', '283.3px');
+  }, {
+    offset: '75%'
+  });
 }]);
