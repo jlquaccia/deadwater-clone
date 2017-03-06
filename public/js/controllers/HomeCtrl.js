@@ -105,4 +105,11 @@ angular.module('deadwater').controller('HomeCtrl', ['$scope', function ($scope) 
   }, {
     offset: '75%'
   });
+
+  // eleven
+  $('.social').waypoint(function () {
+    $('.social').css('width', '100%');
+  }, {
+    offset: '75%'
+  });
 }]);

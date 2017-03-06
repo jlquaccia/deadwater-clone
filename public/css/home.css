@@ -5,7 +5,8 @@
 .projectWrapper .inner.two,
 .projectWrapper .imgWrapper.three,
 .projectWrapper .inner.three,
-.discoverWrapper {
+.discoverWrapper,
+.social {
   width: 0%;
   overflow: hidden;
 }
@@ -146,7 +147,8 @@
 .textWrapperTwo > span em,
 .projectWrapper .inner.one,
 .projectWrapper .inner.two,
-.projectWrapper .inner.three {
+.projectWrapper .inner.three,
+.social {
   -webkit-transition: all .9s cubic-bezier(.19, 1, .22, 1) .6s;
   -o-transition: all .9s cubic-bezier(.19, 1, .22, 1) .6s;
   -moz-transition: all .9s cubic-bezier(.19, 1, .22, 1) .6s;
@@ -331,4 +333,8 @@
 
 .inner.two {
   white-space: nowrap;
+}
+
+.discoverWrapper.two {
+  margin: 0;
 }
